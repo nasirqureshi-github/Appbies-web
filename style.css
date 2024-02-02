@@ -1,0 +1,585 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+}
+/* go to top button */
+.go-to-top-btn {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 100%;
+  position: fixed;
+  cursor: pointer;
+  background-color: #05507e;
+  bottom: 35px;
+  right: 35px;
+  z-index: 998;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.go-to-top-btn i {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.go-to-top-btn:hover,
+.go-to-top-btn i:hover {
+  background-color: #6dc5fc;
+  color: black;
+  transition: 0.5s ease;
+}
+/* End of go to top button */
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  word-spacing: 2px;
+}
+nav {
+  padding: 1% 6% 1% 2%;
+}
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  align-items: center;
+}
+nav li {
+  height: 50px;
+}
+nav a {
+  text-decoration: none;
+  padding: 0 30px;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0 20px 0 15px;
+}
+nav a:hover {
+  color: #007ecf;
+  transition: 0.5s ease;
+}
+nav li:first-child {
+  margin-right: auto;
+}
+nav .logo {
+  width: 130px;
+}
+/* mobile sidebar */
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: #007ecf;
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.mobile-sidebar li {
+  width: 100%;
+}
+
+.mobile-sidebar li::after {
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+  left: 0;
+}
+
+.mobile-sidebar a {
+  width: 100%;
+  font-size: 20px;
+}
+.mobile-sidebar a:hover {
+  color: black;
+  transition: 0.3s ease;
+}
+
+.menu-button {
+  display: none;
+}
+
+/* END OF NAVBAR */
+
+/* HEADER SECTION______________________________________________******** */
+
+.header {
+  background-image: url(images/hero-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+}
+.header .hero-img {
+  width: 22%;
+  position: absolute;
+  margin-left: 15%;
+  margin-top: 2%;
+}
+.hero-content {
+  margin-left: 20%;
+  margin-top: 10%;
+  color: white;
+}
+.hero-content span {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+}
+.hero-content h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+.hero-content p {
+  margin-top: 5%;
+}
+.hero-content .btn-download {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  margin: 6% 0 6% 20%;
+}
+.hero-content .btn-download:hover {
+  background-color: #007ecf;
+  transition: 0.3s ease-in-out;
+  color: white;
+}
+
+/* End of hero section */
+
+/* get free section */
+.get-free {
+  background-color: #007ecf;
+  padding: 10% 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  color: white;
+}
+.get-free h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+.get-free p {
+  padding: 10px 0;
+}
+
+.get-free .android-btn,
+.apple-btn {
+  margin-right: 70px;
+  padding: 10px 50px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+.get-free .android-btn:hover,
+.apple-btn:hover {
+  color: white;
+  background-color: black;
+  transition: 0.5s ease;
+}
+
+.get-free .download-icon {
+  font-size: 30px;
+  padding-right: 20px;
+}
+/* end of get free section */
+
+/* feature section */
+.feature-section {
+  background-color: white;
+  padding: 2% 5%;
+  text-align: center;
+}
+
+.feature-section h1 {
+  color: black;
+  padding: 3% 0;
+  text-align: left;
+  font-weight: 300;
+  font-size: 2rem;
+  margin-left: 10%;
+}
+
+.feature-section p {
+  text-transform: uppercase;
+  padding: 2% 0;
+}
+.feature-section .feature-icon {
+  font-size: 2.5rem;
+  padding: 6% 6%;
+  color: black;
+  border: 2px solid #007ecf;
+  border-radius: 100%;
+}
+.feature-section .feature-icon:hover {
+  color: #007ecf;
+  transition: 0.3s ease-in;
+}
+.feature-section .feature-img {
+  width: 100%;
+}
+
+/* end of feature section_____________________________________***** */
+
+/* why chhose appbies section */
+
+.why-choose-appbies {
+  background-image: url(images/why\ choose\ bg-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-top: 2%;
+  padding-bottom: 15%;
+}
+
+.why-choose-content {
+  padding: 4% 4%;
+  text-align: center;
+}
+.why-choose-appbies h1 {
+  /* margin-top: 5%;
+  padding-top:6%; */
+  color: white;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+.why-choose-appbies .why-choose-p {
+  text-align: center;
+  margin-bottom: 5%;
+}
+.why-choose-appbies p {
+  color: white;
+  text-align: left;
+  padding: 2% 0;
+}
+
+.why-choose-appbies h2 {
+  font-size: 1rem;
+  font-weight: 900;
+  color: white;
+  padding: 10px 0;
+}
+.why-choose-appbies .mobile-screen {
+  width: 70%;
+}
+
+/* End Why choose appbies section */
+
+/* App-screenshot section */
+
+.App-screenshot {
+  background-color: white;
+  padding: 8% 10%;
+}
+.App-screenshot h1 {
+  text-align: center;
+  font-weight: 300;
+}
+.carousel {
+  height: 80vh;
+}
+.carousel-item img {
+  width: 30%;
+  margin: auto;
+  padding: 5% 8%;
+}
+
+.control-prev-icon,
+.control-next-icon {
+  color: black;
+  font-size: 2rem;
+  border: 2px solid #007ecf;
+  border-radius: 100%;
+  padding: 40% 40%;
+}
+
+/* End of App-screenshot section */
+
+/* app-video-showcase section */
+
+.app-video-showcase {
+  background-image: url(images/app\ video\ bg-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 5% 10%;
+  text-align: center;
+}
+.app-video-showcase h1 {
+  color: white;
+  font-weight: 300;
+  padding: 5% 0 2%;
+}
+
+/* End of app-video-showcase section */
+
+/* download section */
+.download-section {
+  background-color: white;
+  padding: 6% 0;
+}
+.download-section h1 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+.download-section .downlaod-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 5% 5%;
+}
+.download-section .download-icons {
+  background-color: #a5c63b;
+  padding: 4% 6%;
+  border-radius: 100%;
+  margin-left: 2%;
+  text-align: center;
+  color: white;
+}
+.download-section .download-icons:hover {
+  background-color: black;
+  transition: 0.5s ease;
+}
+.downlaod-content .apple-download {
+  background-color: #009ddc;
+}
+.downlaod-content .window-download {
+  background-color: #f8682c;
+}
+.download-icons i {
+  font-size: 28px;
+  margin-bottom: 3%;
+}
+.download-icons a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 2px;
+}
+.download-icons a:hover {
+  color: #007ecf;
+  transition: 0.5s ease;
+}
+
+.download-section .download-img {
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 2%;
+}
+.download-section .email {
+  width: 30%;
+  margin-top: 6%;
+  margin-left: 6%;
+}
+.download-section .email label {
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+  line-height: 4;
+}
+.download-section .email input {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 70%;
+}
+.download-section .email input {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 70%;
+}
+.download-section .email button {
+  margin-left: 2%;
+  background-color: white;
+  border-color: slategray;
+  text-align: center;
+}
+.download-section .email button:hover {
+  background-color: #007ecf;
+  transition: 0.5s ease;
+}
+/* end of downlaod-section */
+
+/* app-support-section */
+.app-support-section {
+  background-image: url(images/App\ support\ bg-img.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  padding: 5% 5%;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+.app-support-section h1 {
+  padding-bottom: 3%;
+  font-weight: 300;
+}
+.email-container input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  padding-top: 6%;
+  outline: none;
+  padding-bottom: 2%;
+}
+.email-container input::placeholder {
+  color: white;
+  font-weight: 300;
+}
+.email-container input.btn-submit,
+.app-support-section .chat .btn-chat {
+  border: 1px solid white;
+  padding: 5px 30px;
+  margin-top: 4%;
+  color: white;
+  background-color: transparent;
+}
+.email-container input.btn-submit:hover,
+.app-support-section .chat .btn-chat:hover {
+  background-color: #009ddc;
+  transition: 0.5s ease;
+}
+.contact-details i {
+  font-size: 30px;
+  padding: 4% 0;
+}
+.contact-details p {
+  font-size: 16px;
+  line-height: 1;
+}
+.contact-details i:hover {
+  color: #a5c63b;
+}
+.app-support-section .chat img {
+  padding: 4% 0;
+}
+.app-support-section .chat .btn-online {
+  border: none;
+  padding: 1px 20px;
+  border-radius: 20%;
+  margin-bottom: 2%;
+  background-color: #05d10f;
+  color: white;
+}
+/* end of app-support-section */
+
+/* footer-section */
+.footer-section {
+  background-color: white;
+  padding: 5% 0;
+  text-align: center;
+}
+.footer-section a {
+  text-decoration: none;
+}
+.footer-section a i {
+  padding: 2% 2%;
+  font-size: 1.7rem;
+  color: rgb(86, 84, 84);
+}
+.footer-section a i:hover {
+  color: #007ecf;
+  transition: 0.5s ease;
+}
+
+@media (max-width: 990px) {
+  nav {
+    background-color: #007ecf;
+  }
+  .hideOnMobile {
+    display: none;
+  }
+
+  .menu-button {
+    margin-top: 2%;
+    display: block;
+    border: 2px solid black;
+    border-radius: 15%;
+  }
+
+  nav .logo {
+    width: 110px;
+    margin-top: 2%;
+  }
+  .mobile-sidebar {
+    width: 70%;
+  }
+  .hero-content {
+    margin-left: 2%;
+  }
+  .hero-content .btn-download {
+    margin: 10% 15% 0 15%;
+  }
+  .header .hero-img {
+    width: 50%;
+    margin-left: 20%;
+    margin-top: 15%;
+  }
+  .get-free .android-btn,
+  .apple-btn {
+    margin: 2% 0;
+  }
+
+  .why-choose-appbies .mobile-screen {
+    width: 50%;
+    padding: 6% 0;
+  }
+  .why-choose-appbies h1 {
+    padding: 20% 0 4%;
+    font-size: 2rem;
+  }
+
+  .carousel {
+    height: 20vh;
+  }
+  .download-section .email {
+    width: 100%;
+  }
+
+  .app-support-section {
+    padding: 30% 0;
+    height: 170vh;
+  }
+  .email-container {
+    padding-bottom: 10%;
+  }
+  .email-container input {
+    width: 80%;
+  }
+  .contact-details {
+    padding-bottom: 10%;
+  }
+}
